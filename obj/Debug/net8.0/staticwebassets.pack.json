@@ -245,6 +245,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Downloads\\ContactProject\\ContactProject\\wwwroot\\profile_images\\h@gmail.com.png",
+      "PackagePath": "staticwebassets\\profile_images\\h@gmail.com.png"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\Downloads\\ContactProject\\ContactProject\\wwwroot\\profile_images\\k@gmail.com.png",
+      "PackagePath": "staticwebassets\\profile_images\\k@gmail.com.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ContactProject.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

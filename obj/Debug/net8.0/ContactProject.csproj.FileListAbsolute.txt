@@ -71,3 +71,4 @@ C:\Users\ADMIN\Downloads\ContactProject\ContactProject\obj\Debug\net8.0\refint\C
 C:\Users\ADMIN\Downloads\ContactProject\ContactProject\obj\Debug\net8.0\ContactProject.pdb
 C:\Users\ADMIN\Downloads\ContactProject\ContactProject\obj\Debug\net8.0\ContactProject.genruntimeconfig.cache
 C:\Users\ADMIN\Downloads\ContactProject\ContactProject\obj\Debug\net8.0\ref\ContactProject.dll
+C:\Users\ADMIN\Downloads\ContactProject\ContactProject\obj\Debug\net8.0\ContactProject.sourcelink.json
