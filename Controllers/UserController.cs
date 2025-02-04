@@ -46,6 +46,30 @@ namespace ContactProject.Controllers
         //     }
         // }
 
+        public IActionResult Login(){
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(vm_Login login){
+            t_User UserData=await reg.Login(login);
+            if(ModelState.IsValid){
+                if(UserData.c_UserId!=0){
+                    HttpContext.Session.SetInt32("UserId",UserData.c_UserId);
+                    HttpContext.Session.SetString("UserName",UserData.c_UserName);
+                    // return RedirectToAction("")
+                    ViewData["message"]="Login Successfully..";
+
+                }
+                else{
+                    ViewData["message"]="Invalid Username and password";
+                }
+            }
+            return View(login);
+        }
+
+
+
         [HttpPost]
         public async Task<IActionResult> Register(t_User user)
         {

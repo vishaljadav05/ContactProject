@@ -34,33 +34,38 @@ namespace ContactProject.Repositories.Implementation
             throw new NotImplementedException();
         }
 
-        public async Task<t_User?> Login(string email, string password)
+        public async Task<t_User> Login(vm_Login user)
         {
-            DataTable dt = new DataTable();
-            NpgsqlCommand cm = new NpgsqlCommand(@"SELECT * FROM t_user WHERE c_email=@c_email AND c_password=@c_password", _conn);
-            cm.Parameters.AddWithValue("@c_email", email);
-            cm.Parameters.AddWithValue("@c_password", password);
-
-            _conn.Open();
-            NpgsqlDataReader dr = cm.ExecuteReader();
-            t_User? user = null;
-
-            if (dr.Read())
+            t_User UserData = new t_User();
+            var qry = "SELECT * FROM t_user WHERE c_email=@c_email AND c_password=@c_password";
+            try
             {
-                user = new t_User()
+                using (NpgsqlCommand cmd = new NpgsqlCommand(qry, _conn))
                 {
-                    c_UserId = Convert.ToInt32(dr["c_userid"]),
-                    c_UserName = dr["c_username"].ToString(),
-                    c_Email = dr["c_email"].ToString(),
-                    c_Password = dr["c_password"].ToString(),
-                    c_Address = dr["c_address"].ToString(),
-                    c_Mobile = dr["c_mobile"].ToString(),
-                    c_Gender = dr["c_gender"].ToString(),
-                    c_Image = dr["c_image"].ToString()
-                };
+                    cmd.Parameters.AddWithValue("@c_email", user.c_Email);
+                    cmd.Parameters.AddWithValue("@c_password", user.c_Password);
+                    await _conn.OpenAsync();
+                    var reader = await cmd.ExecuteReaderAsync();
+                    if (reader.Read())
+                    {
+                        UserData.c_UserId = (int)reader["c_userid"];
+                        UserData.c_UserName = (string)reader["c_username"];
+                        UserData.c_Email = (string)reader["c_email"];
+                        UserData.c_Gender = (string)reader["c_gender"];
+                        UserData.c_Mobile = (string)reader["c_mobile"];
+                        UserData.c_Address = (string)reader["c_address"];
+                        UserData.c_Image = (string)reader["c_image"];
+                    }
+
+                }
             }
-            _conn.Close();
-            return user;
+            catch(Exception ex){
+                Console.WriteLine("----------> Login Error: "+ex.Message);
+            }
+            finally{
+                await _conn.CloseAsync();
+            }
+            return UserData;
         }
 
         // public async Task<int> Register(t_User user)
@@ -95,7 +100,7 @@ namespace ContactProject.Repositories.Implementation
         public async Task<int> Register(t_User data)
         {
             // Taking status variable to get different status of registration
-                    
+
             int status = 0;
             try
             {

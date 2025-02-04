@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oFoMv4FWcSlj5KD7dOs1tiXorglAmYt4KI4MkB6CsPE=",
+  "Hash": "dum0XzJgWx6riN3SvHWExkltQpkyBcNFH/i4zv/jFC8=",
   "Source": "ContactProject",
   "BasePath": "_content/ContactProject",
   "Mode": "Default",
@@ -1359,6 +1359,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\profile_images\\k@gmail.com.png"
+    },
+    {
+      "Identity": "C:\\Users\\ADMIN\\Downloads\\ContactProject\\ContactProject\\wwwroot\\profile_images\\Nishit@gmail.com.png",
+      "SourceId": "ContactProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ADMIN\\Downloads\\ContactProject\\ContactProject\\wwwroot\\",
+      "BasePath": "_content/ContactProject",
+      "RelativePath": "profile_images/Nishit@gmail.com#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ktpv28t1hh",
+      "Integrity": "iPlIcvzedtX8lj7i6FTAG5LtiYGJqNnnRk5TK57I7ww=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\profile_images\\Nishit@gmail.com.png"
     }
   ],
   "Endpoints": [
@@ -6607,6 +6628,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-6WhlG79sdvTIKwGquvufxHfoU8qGBiF3sjv+b6If6Qw="
+        }
+      ]
+    },
+    {
+      "Route": "profile_images/Nishit@gmail.com.ktpv28t1hh.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Downloads\\ContactProject\\ContactProject\\wwwroot\\profile_images\\Nishit@gmail.com.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1073372"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iPlIcvzedtX8lj7i6FTAG5LtiYGJqNnnRk5TK57I7ww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 09:49:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ktpv28t1hh"
+        },
+        {
+          "Name": "label",
+          "Value": "profile_images/Nishit@gmail.com.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iPlIcvzedtX8lj7i6FTAG5LtiYGJqNnnRk5TK57I7ww="
+        }
+      ]
+    },
+    {
+      "Route": "profile_images/Nishit@gmail.com.png",
+      "AssetFile": "C:\\Users\\ADMIN\\Downloads\\ContactProject\\ContactProject\\wwwroot\\profile_images\\Nishit@gmail.com.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1073372"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iPlIcvzedtX8lj7i6FTAG5LtiYGJqNnnRk5TK57I7ww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 09:49:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iPlIcvzedtX8lj7i6FTAG5LtiYGJqNnnRk5TK57I7ww="
         }
       ]
     }

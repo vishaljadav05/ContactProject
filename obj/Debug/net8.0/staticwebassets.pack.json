@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\Downloads\\ContactProject\\ContactProject\\wwwroot\\profile_images\\Nishit@gmail.com.png",
+      "PackagePath": "staticwebassets\\profile_images\\Nishit@gmail.com.png"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\Downloads\\ContactProject\\ContactProject\\wwwroot\\profile_images\\h@gmail.com.png",
       "PackagePath": "staticwebassets\\profile_images\\h@gmail.com.png"
     },
